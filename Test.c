@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include "personaje.h"
 
 void enteros()
 {
@@ -31,7 +31,7 @@ int main(){
 	char cad[20];
 	int n;
 	do{
-		printf("\n1. Capturar\n2. Mostrar Cadena n Veces\n3. Agregar personaje\n0. Salir\n");
+		printf("\n1. Capturar\n2. Mostrar Cadena n Veces\n3. Agregar personaje\n4. Mostrar Personajes\n0. Salir\n");
 		scanf("%d",&op);
 
 		switch(op){
@@ -49,11 +49,11 @@ int main(){
 				break;
 			}
 			case 3:{
-
+                capturar_personajes();
 				break;
 			}
 			case 4:{
-
+                mostrar_personajes();
 				break;
 			}
 		}
